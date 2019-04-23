@@ -14,7 +14,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 ### **Installation**
 
-1. Clone the repo 
+1. Clone the repository:
 
     `git clone https://github.com/Bryceacampbell/liri-node-app.git`
 
@@ -22,13 +22,36 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
     `npm install`
 
-3. Create a file named .env and insert your API keys
+3. Create a file named .env and insert your API keys like below:
 
-    SPOTIFY_ID=<*YOUR-SPOTIFY-ID*>  
+    ```SPOTIFY_ID=<*YOUR-SPOTIFY-ID*>  
     SPOTIFY_SECRET=<*YOUR-SPOTIFY-SECRET*>  
     OMBD_API_KEY=<*YOUR-OMDB-API-KEY*>  
     BINT_API_KEY=<*YOUR-BANDS-IN-TOWN-API-KEY*>
+    ```
 
-### **Running The Application**
+## Running The Application
+
+NOTE : Confirm you are in the correct directory prior to running these commands
+    
+### **Set up**
+
+`node liri.js` `<command>` `<string>`
+
+### **Commands**
+
+1. spotify-this-song `string`
+
+    The `spotify-this` command utilizes the Spotify-API and takes in a user input to search for songs.
+
+2. movie-this `string`
+
+    The `movie-this` command uses the OMDB-API and takes in a user input to search a movie title.
+
+3. concert-this `string`
+
+    The `concert-this` command uses
+
+
 
 
