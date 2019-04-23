@@ -32,13 +32,15 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 ## Running The Application
 
-NOTE | *Confirm you are in the correct directory prior to running these commands*
+>NOTE | *Confirm you are in the correct directory prior to running these commands*
     
 ### **Set up**
 
 `node liri.js` `<command>` `<string>`
 
 ### **Commands**
+
+>NOTE | *a `string` can include spaces in any of the following commands*
 
 1. spotify-this-song `string`
 
