@@ -98,7 +98,7 @@ function movieSearch() {
         queryInput = "mr.nobody";
     }
 
-    var api_key = keys.ombd.api_key;
+    var api_key = keys.omdb.api_key;
     var movieName = queryInput;
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=" + api_key;
 
