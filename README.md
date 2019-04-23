@@ -40,8 +40,6 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 ### **Commands**
 
->NOTE | *a `string` can include spaces in any of the following commands*
-
 1. spotify-this-song `string`
 
 The `spotify-this-song` command utilizes the **Spotify-API** and allows a user to search a song title. This command will take in a `string` and return the names of every **artist** with the entered **song title** as well as a **preview url** and the **album** each song is on.
@@ -80,6 +78,8 @@ The `do-what-it-says` command will read the **random.txt** file and perform the 
 ___
 
 ### **Examples**
+
+>NOTE | *a `string` can include spaces in any of the following commands*
 
 `node liri.js spotify-this-song humble`
 
