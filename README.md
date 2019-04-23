@@ -15,11 +15,11 @@
 
 1. Clone the repo 
 
-`git clone https://github.com/Bryceacampbell/liri-node-app.git`
+    `git clone https://github.com/Bryceacampbell/liri-node-app.git`
 
 2.  Open application in directory and install the dependencies:
 
-`npm install`
+    `npm install`
 
 
 
