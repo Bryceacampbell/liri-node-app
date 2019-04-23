@@ -73,10 +73,18 @@ ___
 
 4. do-what-it-says
 
-The `do-what-it-says` command will 
+The `do-what-it-says` command will read the **random.txt** file and perform the previously set command. This command does not take in any additional arguments.
 
 ___
 
+### **Examples**
 
+`node liri.js spotify-this-song humble`
+
+`node liri.js movie-this avengers`
+
+`node liri.js concert-this kendrick lamar`
+
+`node do-what-it-says`
 
 
