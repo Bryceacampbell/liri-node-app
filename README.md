@@ -32,7 +32,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 ## Running The Application
 
-NOTE : Confirm you are in the correct directory prior to running these commands
+NOTE | *Confirm you are in the correct directory prior to running these commands*
     
 ### **Set up**
 
@@ -42,15 +42,40 @@ NOTE : Confirm you are in the correct directory prior to running these commands
 
 1. spotify-this-song `string`
 
-The `spotify-this-song` command utilizes the Spotify-API and takes in a user input to search for songs.
+The `spotify-this-song` command utilizes the **Spotify-API** and allows a user to search a song title. This command will take in a `string` and return the names of every **artist** with the entered **song title** as well as a **preview url** and the **album** each song is on.
+
+___
 
 2. movie-this `string`
 
-The `movie-this` command uses the OMDB-API and takes in a user input to search a movie title.
+The `movie-this` command uses the **OMDB-API** and takes in a user input to search a movie title. This command will take in a `string` and will return :
+
+* The movie title
+* Released date
+* IMBD Rating
+* Rotten Tomatoes Rating
+* Country it was filmed in
+* Languages available
+* The plot of the movie
+* The actors in the movie
+
+___
 
 3. concert-this `string`
 
-The `concert-this` command uses
+The `concert-this` command uses the **Bands In Town API** and takes in a user input to search a specific music artist. This command will take in a `string` and return concert data such as :
+
+* Venue
+* Venue Location
+* Concert Date
+
+___
+
+4. do-what-it-says
+
+The `do-what-it-says` command will 
+
+___
 
 
 
