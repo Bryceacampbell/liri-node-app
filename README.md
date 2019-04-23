@@ -13,11 +13,11 @@
 
 ### Common setup
 
-#### Clone the repo 
+1. Clone the repo 
 
 `git clone https://github.com/Bryceacampbell/liri-node-app.git`
 
-#### Open application in directory and install the dependencies:
+2.  Open application in directory and install the dependencies:
 
 `npm install`
 
