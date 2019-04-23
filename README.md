@@ -1,18 +1,18 @@
 # Liri-Node-App
 
-## What is LIRI?
+### **What is LIRI?**
 
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 ## Getting Started
 
-### *Requirements*
+### **Requirements**
 
 * node.js
 * git bash (*or some other terminal capable of running node applications*)
 * text editor (*for adding API keys in .env file*)
 
-### *Installation*
+### **Installation**
 
 1. Clone the repo 
 
@@ -29,6 +29,6 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
     OMBD_API_KEY=<*YOUR-OMDB-API-KEY*>  
     BINT_API_KEY=<*YOUR-BANDS-IN-TOWN-API-KEY*>
 
-### *Running The Application*
+### **Running The Application**
 
 
