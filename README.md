@@ -22,12 +22,12 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
     `npm install`
 
-3. Create a file named .env and insert your API keys like below:
+3. Create a file named .env and insert **your** API keys like below:
 
-    ```SPOTIFY_ID=<*YOUR-SPOTIFY-ID*>  
-    SPOTIFY_SECRET=<*YOUR-SPOTIFY-SECRET*>  
-    OMBD_API_KEY=<*YOUR-OMDB-API-KEY*>  
-    BINT_API_KEY=<*YOUR-BANDS-IN-TOWN-API-KEY*>
+    ```SPOTIFY_ID=<YOUR-SPOTIFY-ID>  
+    SPOTIFY_SECRET=<YOUR-SPOTIFY-SECRET>  
+    OMBD_API_KEY=<YOUR-OMDB-API-KEY>  
+    BINT_API_KEY=<YOUR-BANDS-IN-TOWN-API-KEY>
     ```
 
 ## Running The Application
