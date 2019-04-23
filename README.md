@@ -40,17 +40,17 @@ NOTE : Confirm you are in the correct directory prior to running these commands
 
 ### **Commands**
 
-### 1. spotify-this-song `string`
+1. spotify-this-song `string`
 
-    The `spotify-this` command utilizes the Spotify-API and takes in a user input to search for songs.
+The `spotify-this-song` command utilizes the Spotify-API and takes in a user input to search for songs.
 
-### 2. movie-this `string`
+2. movie-this `string`
 
-    The `movie-this` command uses the OMDB-API and takes in a user input to search a movie title.
+The `movie-this` command uses the OMDB-API and takes in a user input to search a movie title.
 
-### 3. concert-this `string`
+3. concert-this `string`
 
-    The `concert-this` command uses
+The `concert-this` command uses
 
 
 
