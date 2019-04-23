@@ -8,16 +8,16 @@
 
 ### Requirements
 
-    * node.js
-    * git bash (or some other terminal that is capable of running node applications)
+* node.js
+* git bash (or some other terminal that is capable of running node applications)
 
 ### Common setup
 
-    #### Clone the repo 
+#### Clone the repo 
 
 `git clone https://github.com/Bryceacampbell/liri-node-app.git`
 
-    #### Open application in directory and install the dependencies:
+#### Open application in directory and install the dependencies:
 
 `npm install`
 
