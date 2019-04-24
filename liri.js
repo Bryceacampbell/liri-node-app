@@ -7,6 +7,7 @@ var moment = require("moment");
 
 var command = process.argv[2];
 var queryInput = process.argv.slice(3).join(" ");
+var divider = "\n========================================\n";
 
 function spotifySearch() {
 
@@ -30,12 +31,20 @@ function spotifySearch() {
             let previewURL = newSong.preview_url;
             let albumName = newSong.album.name;
 
-            console.log("Artist: " + artistName);
-            console.log("Song: " + songName);
-            console.log("Preview URL: " + previewURL);
-            console.log("Album: " + albumName);
-            console.log("====================");
-        }
+            let newSongArray = [
+                "Artist: " + artistName,
+                "Song: " + songName,
+                "Preview URL: " + previewURL,
+                "Album: " + albumName
+            ].join("\n\n");
+
+            console.log(newSongArray);
+            console.log(divider);
+
+            fs.appendFile("log.txt", newSongArray + divider, function (err) {
+                if (err) throw err;
+            });
+        };
     });
 };
 
@@ -45,7 +54,7 @@ function doWhatItSays() {
 
         if (error) {
             return console.log(error);
-        }
+        };
 
         let dataArr = data.split(",");
         command = dataArr[0];
@@ -80,12 +89,19 @@ function concertSearch() {
                 let dateTime = newEvent.datetime;
                 let dateCoverted = moment(dateTime).format(dateFormat);
 
-                console.log(lineup + " @ " + venueName);
-                console.log("Location: " + venueLocation);
-                console.log("Date" + dateCoverted);
-                console.log("====================");
+                let newEventArray = [
+                    lineup + " @ " + venueName,
+                    "Location: " + venueLocation,
+                    "Date: " + dateCoverted,
+                ].join("\n\n");
 
-            }
+                console.log(newEventArray);
+                console.log(divider);
+
+                fs.appendFile("log.txt", newEventArray + divider, function (err) {
+                    if (err) throw err;
+                });
+            };
         })
         .catch(function (error) {
             console.log(error);
@@ -96,11 +112,11 @@ function movieSearch() {
 
     if (queryInput === "") {
         queryInput = "mr.nobody";
-    }
+    };
 
-    var api_key = keys.omdb.api_key;
-    var movieName = queryInput;
-    var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=" + api_key;
+    let api_key = keys.omdb.api_key;
+    let movieName = queryInput;
+    let queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=" + api_key;
 
     axios.get(queryUrl)
         .then(function (response) {
@@ -116,15 +132,22 @@ function movieSearch() {
             let plot = movieData.Plot;
             let actors = movieData.Actors;
 
-            console.log("Movie Name: " + movieTitle);
-            console.log("Released on: " + releaseDate);
-            console.log("IMBD Rating: " + imbdRating);
-            console.log("Rotten Tomatoes Rating: " + rottenTomatoes);
-            console.log("Filmed in: " + country);
-            console.log("Language: " + language);
-            console.log("Plot: " + plot);
-            console.log("Actors: " + actors);
+            let movieArray = [
+                "Movie Name: " + movieTitle,
+                "Released on: " + releaseDate,
+                "IMBD Rating: " + imbdRating,
+                "Rotten Tomatoes Rating: " + rottenTomatoes,
+                "Filmed in: " + country,
+                "Language: " + language,
+                "Plot: " + plot,
+                "Actors: " + actors
+            ].join("\n\n");
 
+            console.log(movieArray);
+
+            fs.appendFile("log.txt", movieArray + divider, function (err) {
+                if (err) throw err;
+            });
         })
         .catch(function (error) {
             console.log(error);
