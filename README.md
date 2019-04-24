@@ -81,19 +81,19 @@ ___
 
 >NOTE | *a `string` can include spaces in any of the following commands*
 
-`node liri.js spotify-this-song native blood`
+ `node liri.js spotify-this-song` `<song name>`
 
 ![alt text](gifs/spotify-screencast.gif)
 
-`node liri.js movie-this avengers`
+`node liri.js movie-this` `<movie title>`
 
 ![alt text](gifs/omdb-screencast.gif)
 
-`node liri.js concert-this silent planet`
+`node liri.js concert-this` `<music artist>`
 
 ![alt text](gifs/bint-screencast.gif)
 
-`node do-what-it-says`
+`node liri.js do-what-it-says`
 
 ![alt text](gifs/do-what-it-says-screencast.gif)
 
