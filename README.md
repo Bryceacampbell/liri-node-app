@@ -85,11 +85,16 @@ ___
 
 ![alt text](gifs/spotify-screencast.gif)
 
-
 `node liri.js movie-this avengers`
 
-`node liri.js concert-this kendrick lamar`
+![alt text](gifs/omdb-screencast.gif)
+
+`node liri.js concert-this silent planet`
+
+![alt text](gifs/bint-screencast.gif)
 
 `node do-what-it-says`
+
+![alt text](gifs/do-what-it-says-screencast.gif)
 
 
